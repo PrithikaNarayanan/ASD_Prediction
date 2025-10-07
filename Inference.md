@@ -30,7 +30,6 @@ The classification report summarizes precision, recall, and F1-score for both cl
 
 ## 3️⃣ Confusion Matrix
 
-![Alt text](Confusion_Matrix.png)
 
 The confusion matrix showed a **dominant diagonal pattern**, meaning most predictions matched their true labels.  
 Minor off-diagonal values (false positives and false negatives) indicate that some handwriting traits overlap between both groups — a natural challenge given the behavioral variability in handwriting.
@@ -41,10 +40,7 @@ Minor off-diagonal values (false positives and false negatives) indicate that so
 
 ## 4️⃣ ROC-AUC & Precision-Recall Curves
 
-![Alt text](AUC.png)
 - **ROC-AUC (~0.91)** reflects the model’s strong ability to separate the two classes.
-
-![Alt text](AP.png)
 - **Precision-Recall Curve** remained consistently high, confirming reliable performance even with class imbalance.
 
 > 🎯 **Inference:** A model with AUC above 0.9 is considered excellent for binary classification.  
@@ -69,13 +65,8 @@ The error analysis section examined where and why the model made incorrect predi
 
 Subgroup analysis explored accuracy across **age group**, **severity**, and **activity**:
 
-![Alt text](Accuracy_by_Age.png)
 - **By Age Group:** Slightly lower accuracy for younger writers — likely due to immature motor control and inconsistent stroke formation.
-
-![Alt text](Accuracy_by_severity.png)
 - **By Severity:** Stable accuracy across mild to severe ASD categories — model robustness confirmed.
-
-![Alt text](Accuracy_by_activity.png) 
 - **By Activity:** Variation across tasks (e.g., drawing vs. sentence writing) suggests contextual handwriting features.
 
 > 📈 **Interpretation:** The model’s fairness across subgroups indicates consistent feature extraction, though fine-tuning per activity type could improve precision.
